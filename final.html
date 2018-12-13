@@ -69,7 +69,7 @@
                    <div class="about-fixed">
                     
                      <div class="my-pic">
-                        <img src="images/pic/my-pic.png" alt="">
+                        <img src="images/pic/starry_johannesburg.jpg" alt="">
                         <a href="javascript:void(0)" class="collapsed" data-target="#menu" data-toggle="collapse"><i class="icon-menu menu"></i></a>
                          <div id="menu" class="collapse">
                            <ul class="menu-link">
@@ -135,7 +135,7 @@
                                    <!-- Post Detail End -->
                                     
                                     <div class="post-title">
-                                    <h2>Statement:</h2> 
+                                    <h2>Statements and Steps</h2> 
                                    </div>
                                    
                                    
@@ -148,20 +148,20 @@
                                   <div class="row margin-top-40 margin-bottom-40">
                                  
                                     <div class="col-md-4 col-sm-6 col-xs-12">
-                                      <a href="images/blog/7.jpg" class="image-popup" title="image Title">
-                                      <img src="images/blog/7.jpg" class="img-responsive" alt="">
+                                      <a href="sf2.png" class="image-popup" title="image Title">
+                                      <img src="sf2.png" class="img-responsive" alt="">
                                      </a>
                                     </div>
                     
                                     <div class="col-md-4 col-sm-6 col-xs-12">
-                                      <a href="images/blog/5.jpg" class="image-popup" title="image Title">
-                                      <img src="images/blog/5.jpg" class="img-responsive" alt="">
+                                      <a href="starry_night.jpg" class="image-popup" title="image Title">
+                                      <img src="starry_night.jpg" class="img-responsive" alt="">
                                      </a>
                                     </div>
                     
                                    <div class="col-md-4 col-sm-6 col-xs-12">
-                                     <a href="images/blog/6.jpg" class="image-popup" title="image Title">
-                                     <img src="images/blog/6.jpg" class="img-responsive" alt="">
+                                     <a href="sf1.png" class="image-popup" title="image Title">
+                                     <img src="sf1.png" class="img-responsive" alt="">
                                     </a>
                                    </div>
                                 
@@ -174,87 +174,170 @@
                                    </div>
                                     <div class="list">
                                    <ul>
-                                     <li>We will use convolutional neural network (CNN) to extract content and style in different images.</li>
-                                     <li>We will use A Neural Algorithm of Artistic Style to separate and recombine the image content and style of natural images.</li>
-                                     <li>The extracted style or feature will be combined into the target image.</li>
-                                     <li>A image with the chosen style will be created.</li>
+                                     <li>We have 3 steps that involves in our final project: </li>
+                                     <li>The first is to re-implement the image style transfer by modifing the original files within our methods in some parts.</li>
+                                     <li>The second one is to select the part that you don't want to do the style transfer, then try to make the unselected portion become transfered. </li>
+                                     <li>The last step is to mix two different layer of graph together: The style-transfered backgrounds and original elements, to create a new image.</li>
                                     </ul>
                                    </div>
                                    
                                      
-                                  
 
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at quam at orci commodo hendrerit vitae nec eros. Vestibulum neque est, imperdiet nec tortor nec, tempor semper metus. <b>Cras vel tempus velit</b>, et accumsan nisi. Duis laoreet pretium ultricies. Curabitur rhoncus auctor nunc congue sodales. Sed posuere nisi ipsum, eget dignissim nunc dapibus eget. Aenean elementum <b><a href="javascript:void(0)" data-toggle="popover" data-placement="top" data-content="You can write any text here">Click me</a></b> sollicitudin sapien ut sapien fermentum aliquet mollis. Curabitur ac quam orci sodales quam ut tempor. <b data-toggle="tooltip" data-placement="top" title="You can write any text here.">Hover me</b> suspendisse, gravida in augue in, interdum bibendum dui. Suspendisse sit amet justo sit amet diam fringilla commodo. Praesent ac magna at metus malesuada tincidunt non ac arcu. Nunc gravida eu felis vel elementum. Vestibulum sodales quam ut tempor tempor. Donec sollicitudin sapien ut sapien fermentum, non ultricies nulla gravida.</p>
+
+                                      <div class="post-title">
+                                    <h2>Thoughts</h2> 
+
+                                   </div>
+                                   <p>In our research this topic has been implemented a lot both in academic fields and industrial fields, but we still think it is worth it to modify it with add-ons and re-implement it because we will have more occations to mix two images together without losing the originality of the image, and this is a good start to learn about the concept from doing this project.</p>
+                                    <p>Although using Tensorflow and VGG to build up the enviornment of image style transfer is common, we found vgg19 and python 3.7 has some compatability issues with crucial parts like  anaconda3 and even the addins for terminal(oh-my-zsh). So we tried to re-implement it on vgg16 with python 3.6 on linux,  which is successful. </p>
+                                  <p>After analyzing multiple implementations on github, google codes and the one from hvass lab, we tried to figure it out with our style of implementing the image style transfers. However, the core of these different implementations are same, involving 3 steps theretically. </p>
+                                  
+                                    <div class="post-title">
+                                    <h2>Traditional Image Style Transfer</h2> 
+                                   </div>
+                                    <p>Here, we partially re-implemented the tradiditional and successful image style transfer. After setting up the enviornment and generated the result from original code, we re-implemented the image style transfer codes. </p>
+
+
+
+
+
+
+                                  
+                                  <!-- Post Image Gallery Start -->
+                                  
+                                 <!-- Post Image Gallery End -->
+
+                                 <div class="post-image margin-top-40 margin-bottom-40">
+                                   <img src="1.png" alt="">
+                                   <p>One of our implementations</p>                                      
+                                  </div>
+
+
+
+
+                                  <div class="post-title">
+                                    <h2>2 different ways</h2> 
+                                   </div>
+                                    <p>There are two different approaches. The first one is select the source image as original photo and style image as a different painting. The second one is combining the style of two photos together into a new one. We implemented the first one but found the second one pretty interesting. </p>
                                     
                                 
                                 <!-- Post Image Start -->
                                 <div class="post-image margin-top-40 margin-bottom-40">
-                                   <img src="images/blog/1.jpg" alt="">
-                                   <p>Image source from <a href="#" target="_blank">Link</a></p>                                      
+                                   <img src="ex2.png" alt="">
+                                   <p>IST between a picture and a painting from<a href="https://codelabs.developers.google.com/codelabs/tensorflow-style-transfer-android/index.html?index=..%2F..%2Fio2017#0" target="_blank"> google codelabs</a></p>                                      
+                                  </div>
+
+
+                                  <div class="post-image margin-top-40 margin-bottom-40">
+                                   <img src="ex3.jpeg" alt="">
+                                   <p>IST between two pictures <a href="https://www.engadget.com/2017/03/30/adobes-experimental-app-copies-one-photos-style-to-another/" target="_blank"> by adobe</a></p>                                      
                                   </div>
                                   <!-- Post Image End -->
                                   
+
+
+                                  <div class="post-title">
+                                    <h2>Portion Selection</h2> 
+                                   </div>
+                                    <p>To select the part that we want to keep it originaly, we implemented the portion selection to <b>detect and select</b> the oart we want to keep. As you can see in the examples below, we keep some core parts like the blah and the blah from the 1st and 2nd image below. From then on, the portions that have been detected are marked white, means they are the portions that will be kept after the image style transfer. </p>
                                   
-                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at quam at orci commodo hendrerit vitae nec eros. Vestibulum neque est, imperdiet nec tortor nec, tempor semper metus. Cras vel tempus velit, et accumsan nisi. Duis laoreet pretium ultricies. Curabitur rhoncus auctor nunc congue sodale Sed posuere nisi ipsum.</p>
+                                   <p>As you can see, for smaller objects our method successfully selected the workers on aircraft carrier and the further hover boad on the sea. For larger objects, our project have detected the large ship in the harbor, and 2 people on the land. </p>
                                    
                                  
                                  
-                                 <!-- Post Video Tutorial Start -->
-                                 <div class="video-box margin-top-40 margin-bottom-40">
-                                  <div class="video-tutorial">
-                                   <a class="video-popup" href="https://www.youtube.com/watch?v=O2Bsw3lrhvs" title="Video Tutorial">
-                                   <img src="images/blog/4.jpg" alt="">
-                                   </a>                           
-                                  </div>
-                                 <p>Integrate video on magnific popup for fast page load.</p>
-                                </div>
-                                <!-- Post Video Tutorial End -->
+                                 
+                                  
                                 
+                                  <!-- Post Image Gallery Start -->
+                                  <div class="row margin-top-40 margin-bottom-40">
+                                 
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <a href="images/bg/input1.jpg" class="image-popup" title="image Title">
+                                      <img src="images/bg/input1.jpg" class="img-responsive" alt="">
+                                     </a>
+                                    </div>
+                    
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <a href="images/bg/select1.jpg" class="image-popup" title="image Title">
+                                      <img src="images/bg/select1.jpg" class="img-responsive" alt="">
+                                     </a>
+                                    </div>
+                  
+                                
+                                 </div>
+
+                                 <div class="row margin-top-40 margin-bottom-40">
+                                 
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <a href="images/bg/input8.jpg" class="image-popup" title="image Title">
+                                      <img src="images/bg/input8.jpg" class="img-responsive" alt="">
+                                     </a>
+                                    </div>
+                    
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <a href="images/bg/select8.jpg" class="image-popup" title="image Title">
+                                      <img src="images/bg/select8.jpg" class="img-responsive" alt="">
+                                     </a>
+                                    </div>
+                  
+                                
+                                 </div>
+                                 <!-- Post Image Gallery End -->
                                   
                                    
-                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at quam at orci commodo hendrerit vitae nec eros. Vestibulum neque est, imperdiet nec tortor nec, tempor semper metus. Cras vel tempus velit, et accumsan nisi. Duis laoreet pretium ultricies. Curabitur rhoncus auctor nunc congue sodale Sed posuere nisi ipsum.</p>
-                                   
-                                  
-                                  
-                                  <!-- Post Blockquote Start -->
-                                  <div class="post-quote margin-top-40 margin-bottom-40">
-                                    <blockquote>Project Statement:</blockquote>
-                                  </div>
-                                  <!-- Post Blockquote End -->
-                                  
-                                  
-                                   
-                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at quam at orci commodo hendrerit vitae nec eros. Vestibulum neque est, imperdiet nec tortor nec, tempor semper metus. Cras vel tempus velit, et accumsan nisi. Duis laoreet pretium ultricies. Curabitur rhoncus auctor nunc congue sodale Sed posuere nisi ipsum.</p>
-                                   
+                                                                <!-- Post Blockquote (Italic Style) Start -->
+                                  <blockquote class="margin-top-40 margin-bottom-40">
+                                    <p>This is a portion of our image edit code that we have implemented. For all the codes please scroll down and download the zip file with all the codes and enviornments aw have. </p>
+
+                                   </blockquote> 
+                                   <!-- Post Blockquote (Italic Style) End -->       
                                  
                                   
                                   <!-- Post Coding (SyntaxHighlighter) Start -->
                                   <div class="margin-top-40 margin-bottom-40">  
                                    <pre class="brush: js">
-                                   /* Smooth Scroll */
+                                   from PIL import Image
+import glob
 
-                                    $('a.smoth-scroll').on("click", function (e) {
-                                      var anchor = $(this);
-                                      $('html, body').stop().animate({
-                                      scrollTop: $(anchor.attr('href')).offset().top - 50
-                                      }, 1000);
-                                      e.preventDefault();
-                                     });
-				 
-                                   /* Scroll To Top */
-		
-                                   $(window).scroll(function(){
-                                     if ($(this).scrollTop() >= 500) {
-                                     $('.scroll-to-top').fadeIn();
-                                     } else {
-                                     $('.scroll-to-top').fadeOut();
-                                     }
-                                     });
-	
-	                               $('.scroll-to-top').click(function(){
-                                   $('html, body').animate({scrollTop : 0},800);
-                                   return false;
-                                    });
+base_list = [];
+edit_list = [];
+tran_list = [];
+filename_list = [];
+print('...........');
+for filename in glob.glob('demo/*.jpg'):
+    im = Image.open(filename);
+    base_list.append(im);
+    for filename2 in glob.glob('output1/*.jpg'):
+        if filename[5:] == filename2[8:-4]:
+            im2 = Image.open(filename2);
+            edit_list.append(im2);
+            filename_list.append(filename2[8:-4]);
+            break;
+    for filename3 in glob.glob('demo/output3/*.jpg'):
+        if filename[5:] == filename3[13:]:
+            im3 = Image.open(filename3);
+            tran_list.append(im3);
+            break;
+for i in range(len(edit_list)):
+    width, height = edit_list[i].size;
+    base_rgb = base_list[i].convert('RGB');
+    edit_rgb = edit_list[i].convert('RGB');
+    tran_rgb = tran_list[i].convert('RGB');
+    img = Image.new('RGB', (width, height), "white")
+    pixels = img.load();
+    for x in range(width):
+        for y in range(height):
+            r1,g1,b1 = base_rgb.getpixel((x,y));
+            r2,g2,b2 = edit_rgb.getpixel((x,y));
+            r3,g3,b3 = tran_rgb.getpixel((x,y));
+
+            if (abs(r1-r2) <= 20) and (abs(g1-g2) <= 20) and (abs(b1-b2) <= 20):
+                pixels[x,y] = (r3,g3,b3);
+            else:
+                pixels[x,y] = (r1,g1,b1);
+
+    img.save('demo/output4/' + filename_list[i], 'JPEG');
+print('...........');
                                   </pre>
                                  </div>
                                  <!-- Post Coding (SyntaxHighlighter) End -->
@@ -262,174 +345,273 @@
                                   
                                   
                                   <div class="post-title">
-                                    <h2>How to implement?</h2> 
+                                    <h2>Some results</h2> 
                                    </div>
                                    
                                    
-                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at quam at orci commodo hendrerit vitae nec eros. Vestibulum neque est, imperdiet nec tortor nec, tempor semper metus. Cras vel tempus velit, et accumsan nisi. Duis laoreet pretium ultricies. Curabitur rhoncus auctor nunc congue sodale Sed posuere nisi ipsum.</p>
+                                   <p>After using detectron to detect the part we want to keep it originally, we can see that the background(which detectron doesn't detect and label as white portions previously) has been style transfered. Here are one sample of the original images, style images and output.</p>
                                    
-                                     
-                                  
+                                     <p>Note that the output may looks darker as our style image is deep blue. Also, we use 1080p images as our source images.</p>
+                                   
                                   
                                   <!-- Post Image Gallery Start -->
                                   <div class="row margin-top-40 margin-bottom-40">
                                  
                                     <div class="col-md-4 col-sm-6 col-xs-12">
-                                      <a href="images/blog/7.jpg" class="image-popup" title="image Title">
-                                      <img src="images/blog/7.jpg" class="img-responsive" alt="">
+                                      <a href="images/bg/input1.jpg" class="image-popup" title="image Title">
+                                      <img src="images/bg/input1.jpg" class="img-responsive" alt="">
                                      </a>
                                     </div>
                     
                                     <div class="col-md-4 col-sm-6 col-xs-12">
-                                      <a href="images/blog/5.jpg" class="image-popup" title="image Title">
-                                      <img src="images/blog/5.jpg" class="img-responsive" alt="">
+                                      <a href="style.jpg" class="image-popup" title="image Title">
+                                      <img src="style.jpg" class="img-responsive" alt="">
                                      </a>
                                     </div>
                     
                                    <div class="col-md-4 col-sm-6 col-xs-12">
-                                     <a href="images/blog/6.jpg" class="image-popup" title="image Title">
-                                     <img src="images/blog/6.jpg" class="img-responsive" alt="">
+                                     <a href="images/bg/output1.jpg" class="image-popup" title="image Title">
+                                     <img src="images/bg/output1.jpg" class="img-responsive" alt="">
                                     </a>
                                    </div>
                                 
                                  </div>
                                  <!-- Post Image Gallery End -->
                                  
-                                
-                                
-                                  <div class="post-title">
-                                    <h2>Make it more awesome</h2> 
+                                <div class="post-title">
+                                    <h2>Samples</h2> 
                                    </div>
-                                   
-                                   
-                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at quam at orci commodo hendrerit vitae nec eros. Vestibulum neque est.</p>
+                                <p>From left, to right: original source image and the generated image</p>
+                                <p>We use the same style image in this case, which could be shown here: </p>
+
+
+<div class="post-image margin-top-40 margin-bottom-40">
+                                   <img src="style.jpg" alt="">
+                                   <p>the style image in all following samples</p>                                      
+                                  </div>
+                                  
+<blockquote class="margin-top-40 margin-bottom-40">
+                                    <p>Note: For better results you can click on tthe image to see the original file of the images(which is much clearer!) </p>
+
+                                   </blockquote> 
+
+
+
+                                  <!-- Post Image Gallery Start -->
+                                  <div class="row margin-top-40 margin-bottom-40">
                                  
-                                   
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <a href="images/bg/input1.jpg" class="image-popup" title="image Title">
+                                      <img src="images/bg/input1.jpg" class="img-responsive" alt="">
+                                     </a>
+                                    </div>
+                    
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <a href="images/bg/output1.jpg" class="image-popup" title="image Title">
+                                      <img src="images/bg/output1.jpg" class="img-responsive" alt="">
+                                     </a>
+                                    </div>
+                  
+                                
+                                 </div>
+
+                                 <div class="row margin-top-40 margin-bottom-40">
+                                 
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <a href="images/bg/input2.jpg" class="image-popup" title="image Title">
+                                      <img src="images/bg/input2.jpg" class="img-responsive" alt="">
+                                     </a>
+                                    </div>
+                    
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <a href="images/bg/output2.jpg" class="image-popup" title="image Title">
+                                      <img src="images/bg/output2.jpg" class="img-responsive" alt="">
+                                     </a>
+                                    </div>
+                  
+                                
+                                 </div>
+                                 
+
+                                 <div class="row margin-top-40 margin-bottom-40">
+                                 
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <a href="images/bg/input3.jpg" class="image-popup" title="image Title">
+                                      <img src="images/bg/input3.jpg" class="img-responsive" alt="">
+                                     </a>
+                                    </div>
+                    
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <a href="images/bg/output3.jpg" class="image-popup" title="image Title">
+                                      <img src="images/bg/output3.jpg" class="img-responsive" alt="">
+                                     </a>
+                                    </div>
+                  
+                                
+                                 </div>
+                                 <div class="row margin-top-40 margin-bottom-40">
+                                 
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <a href="images/bg/input4.jpg" class="image-popup" title="image Title">
+                                      <img src="images/bg/input4.jpg" class="img-responsive" alt="">
+                                     </a>
+                                    </div>
+                    
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <a href="images/bg/output4.jpg" class="image-popup" title="image Title">
+                                      <img src="images/bg/output4.jpg" class="img-responsive" alt="">
+                                     </a>
+                                    </div>
+                  
+                                
+                                 </div>
+                                 <div class="row margin-top-40 margin-bottom-40">
+                                 
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <a href="images/bg/input5.jpg" class="image-popup" title="image Title">
+                                      <img src="images/bg/input5.jpg" class="img-responsive" alt="">
+                                     </a>
+                                    </div>
+                    
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <a href="images/bg/output5.jpg" class="image-popup" title="image Title">
+                                      <img src="images/bg/output5.jpg" class="img-responsive" alt="">
+                                     </a>
+                                    </div>
+                  
+                                
+                                 </div>
+                                 <div class="row margin-top-40 margin-bottom-40">
+                                 
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <a href="images/bg/input6.jpg" class="image-popup" title="image Title">
+                                      <img src="images/bg/input6.jpg" class="img-responsive" alt="">
+                                     </a>
+                                    </div>
+                    
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <a href="images/bg/output6.jpg" class="image-popup" title="image Title">
+                                      <img src="images/bg/output6.jpg" class="img-responsive" alt="">
+                                     </a>
+                                    </div>
+                  
+                                
+                                 </div>
+                                 <div class="row margin-top-40 margin-bottom-40">
+                                 
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <a href="images/bg/input7.jpg" class="image-popup" title="image Title">
+                                      <img src="images/bg/input7.jpg" class="img-responsive" alt="">
+                                     </a>
+                                    </div>
+                    
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <a href="images/bg/output7.jpg" class="image-popup" title="image Title">
+                                      <img src="images/bg/output7.jpg" class="img-responsive" alt="">
+                                     </a>
+                                    </div>
+                  
+                                
+                                 </div>
+                                 <div class="row margin-top-40 margin-bottom-40">
+                                 
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <a href="images/bg/input8.jpg" class="image-popup" title="image Title">
+                                      <img src="images/bg/input8.jpg" class="img-responsive" alt="">
+                                     </a>
+                                    </div>
+                    
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <a href="images/bg/output8.jpg" class="image-popup" title="image Title">
+                                      <img src="images/bg/output8.jpg" class="img-responsive" alt="">
+                                     </a>
+                                    </div>
+                  
+                                
+                                 </div>
+
                                   
-                                  <!-- Post Blockquote (Italic Style) Start -->
-                                  <blockquote class="margin-top-40 margin-bottom-40">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at quam at orci commodo hendrerit vitae nec eros. Vestibulum neque est, imperdiet nec tortor nec, tempor semper metus. Cras vel tempus velit, <b>et accumsan nisi</b>. Duis laoreet pretium ultricies. Curabitur rhoncus auctor nunc congue sodale Sed posuere nisi ipsum.</p>
-                                   </blockquote>
-                                   <!-- Post Blockquote (Italic Style) End -->
-                                   
-                                   
-                                  
+                                 <!-- Post Image Gallery End -->
+
+                                
                                   
                                   <div class="post-title">
-                                    <h2>Learn to check all the features</h2> 
+                                    <h2>Rooms for improvement</h2> 
                                    </div>
-                                   
-                                   
-                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at quam at orci commodo hendrerit vitae nec eros. Vestibulum neque est.</p>
-                                 
                                    
                                   
                                   <!-- Post List Style Start -->
                                   <div class="list">
                                    <ul>
-                                     <li>Ready to use Blog Template</li>
-                                     <li>It have all the necessary features which you need to run blog</li>
-                                     <li>Neat and Clean Typography</li>
-                                     <li>Speed Optimization</li>
+                                     <li>Relatively Slow Process: It took at least several minutes to generate a satisfying result, as we use high-resolution image imputs.</li>
+                                     <li>Different content images and style images require different weights to generate good results</li>
+                                    
                                     </ul>
                                    </div>
                                    
                                    
-                                  <div class="list list-style margin-top-40">
+                                  
+                                  <div class="post-title">
+                                    <h2>References</h2> 
+                                   </div>
+                                   
+                                  
+                                  <!-- Post List Style Start -->
+                                  <div class="list">
                                    <ul>
-                                     <li>Ready to use Blog Template</li>
-                                     <li>It have all the necessary features which you need to run blog</li>
-                                     <li>Neat and Clean Typography</li>
-                                     <li>Speed Optimization</li>
+                                     <li>Gatys, L. A., Ecker, A. S., & Bethge, M. (2016). Image Style Transfer Using Convolutional Neural Networks. 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR). doi:10.1109/cvpr.2016.265</li>
+                                     <li>Artistic Style Transfer with Convolutional Neural Network. (2018). Retrieved from https://medium.com/data-science-group-iitr/artistic-style-transfer-with-convolutional-neural-network-7ce2476039fd</li>
+                                     <li>https://github.com/Hvass-Labs/TensorFlow-Tutorials</li>
+                                     <li>https://github.com/fzliu/style-transfer</li>
                                     </ul>
                                    </div>
-                                   
-                                   
-                                  <div class="list list-style-2 margin-top-40">
-                                   <ul>
-                                     <li>Ready to use Blog Template</li>
-                                     <li>It have all the necessary features which you need to run blog</li>
-                                     <li>Neat and Clean Typography</li>
-                                     <li>Speed Optimization</li>
-                                    </ul>
-                                   </div>
-                                   <!-- Post List Style End -->
+                                  
+                                  
+                                  
+                                 
+                                    
 
-                                  
-                                  
-                                  
-                                  <!-- Post Author Bio Box Start -->
-                                  <div class="about-author margin-top-70 margin-bottom-50">
-                                    
-                                    <div class="picture">
-                                      <img src="images/blog/author.png" class="img-responsive" alt="">
-                                     </div>
-                                   
-                                    <div class="c-padding">
-                                       <h3>Article By <a href="#" target="_blank" data-toggle="tooltip" data-placement="top" title="Visit Alex Website">Alex Parker</a></h3>
-                                       <p>You can use about author box when someone guest post on your blog, Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ad minim veniam.</p>
-                                      </div>
-                                    </div>
-                                    <!-- Post Author Bio Box End -->
-                                    
+
+
                                     
                                     
                                     
                                   <!-- You May Also Like Start -->
                                   <div class="you-may-also-like margin-top-50 margin-bottom-50">
-                                    <h3>You may also like</h3>
+                                    <h3>To previous works</h3>
                                      <div class="row">
                                  
                                     <div class="col-md-4 col-sm-6 col-xs-12">
-                                      <a href="single.html"><p>Make mailchimp singup form working with ajax using jquery plugin</p></a>
+                                      <a href="works.html"><p>Files</p></a>
                                      </div>
                     
                                     <div class="col-md-4 col-sm-6 col-xs-12">
-                                      <a href="single.html"><p>How to design elegant e-mail newsletter in html for wish christmas to your subscribers?</p></a>
+                                      <a href="midterm.html"><p>Midterm</p></a>
                                      </div>
                     
                                     <div class="col-md-4 col-sm-6 col-xs-12">
-                                      <a href="single.html"><p>How to customize a wordpress theme entirely from scratch using a child theme?</p></a>
+                                      <a href="single.html"><p>Proposal</p></a>
                                      </div>
                                     
                                     </div>
                                   </div>
                                   <!-- You May Also Like End -->
                                     
-                                   
+                                   <div class="about-author margin-top-70 margin-bottom-50">
+                                    <div class="c-padding">
+                                       <h3><a href="https://drive.google.com/file/d/1AVSimLn5H9zvaSyh8xGtJLCg6MXYEUjn/view" target="_blank" data-toggle="tooltip" data-placement="top" title="Visit Website">Download Code: Press the 'download' button on the website</a></h3>
+                                      </div>
+                                    </div>
                                   
                                   
-                                  <!-- Post Comment (Disqus) Start -->
-                                  <div id="comment" class="comment">
-                                    <h3>Discuss about post</h3>
-                                     
-                                     
-                                     <!-- Disqus Code Start  (Please Note: Disqus will not be load on local, You have to upload it on server.)-->
-                                     <div id="disqus_thread"></div>
-							          <script>
-					
-					/***  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS. LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables.
-							
-							var disqus_config = function () {
-							this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-							this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-							};
-							*/
-							
-							           (function() { // DON'T EDIT BELOW THIS LINE
-							           var d = document, s = d.createElement('script');
-							           s.src = '//uipasta.disqus.com/embed.js';   // Please change the url from your own disqus id
-							           s.setAttribute('data-timestamp', +new Date());
-							           (d.head || d.body).appendChild(s);
-							           })();
-							          </script>
-			  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-              <!-- Disqus Code End -->
-              
-                                   </div>
-                                   <!-- Post Comment (Disqus) End -->
                                   
-                                   
+                                  
+                                    <p>
+                                  <br />
+                                  <br />
+                                  <b><a href="index.html" class="button button-style button-anim fa fa-long-arrow-right"><span>Return to Home</span></a></b>
+
+                                  </p>
 
                                 </div>    
                              </div>
@@ -437,21 +619,8 @@
                          </div>
                          
                         
+                       
                         
-                        <!-- Subscribe Form Start -->
-                        <div class="col-md-8 col-md-offset-2">
-                           <form id="mc-form" method="post" action="http://uipasta.us14.list-manage.com/subscribe/post?u=854825d502cdc101233c08a21&amp;id=86e84d44b7">
-								
-						  <div class="subscribe-form margin-top-20">
-							 <input id="mc-email" type="email" placeholder="Email Address" class="text-input">
-							  <button class="submit-btn" type="submit">Submit</button>
-								</div>
-                                <p>Subscribe to my weekly newsletter</p>
-								<label for="mc-email" class="mc-label"></label>
-							  </form>
-                             
-                           </div>
-                           <!-- Subscribe Form End -->
                            
                            
                          </div>
@@ -462,9 +631,9 @@
                        <div class="col-md-12 page-body margin-top-50 footer">
                           <footer>
                           <ul class="menu-link">
-                               <li><a href="index.html">Home</a></li>
-                               <li><a href="about.html">About</a></li>
-                               <li><a href="work.html">Work</a></li>
+                               <li><a href="index.html">Homepage</a></li>
+                               <li><a href="about.html">About Our Project</a></li>
+                               <li><a href="work.html">File Download</a></li>
                                <li><a href="contact.html">Contact</a></li>
                             </ul>
                             
@@ -489,12 +658,7 @@
     
     
      
-     <!-- Endpage Box (Popup When Scroll Down) Start -->
-     <div id="scroll-down-popup" class="endpage-box">
-       <h4>Read Also</h4>
-       <a href="#">How to make your company website based on bootstrap framework...</a>
-      </div>
-      <!-- Endpage Box (Popup When Scroll Down) End -->
+     
       
     
     
