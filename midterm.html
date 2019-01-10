@@ -143,8 +143,8 @@
                                    <ul>
                                      <li>The goal of our project is to transfer the style of an image to another image. We need a style-reference image so that we can transfer its style into a target image. </li>
                                      <li>The style of an image means the distinctive artistic elements that make an image special and unique, such as the waves in the painting The Great Wave off Kanagawa.</li>
-                                     <li>It is important to combine the style of the style-reference image and the content of target image to synthesize a new image, which is the basic idea of image style transfer. </li>
-                                     <li>It is necessary to build a model to separately detect the content information in target image and style information in style-reference image. In the paper “Image Style Transfer Using Convolutional Neural Networks”, it was proposed that CNN, convolutional neural network, is an effective model to extract image styles and contents. Therefore, we will be implementing CNN to accomplish model information extraction. </li>
+                                     <li>It is important to combine the style of the style-reference image and the content of the target image to synthesize a new image, which is the basic idea of image style transfer. </li>
+                                     <li>It is necessary to build a model to separately detect the content information in target image and style information in the style-reference image. In the paper “Image Style Transfer Using Convolutional Neural Networks”, it was proposed that CNN, convolutional neural network, is an effective model to extract image styles and contents. Therefore, we will be implementing CNN to accomplish model information extraction. </li>
                                     </ul>
                                    </div>
   
@@ -184,8 +184,8 @@
                                     
                                    
                                      <p>1. Initialize the synthetic image.</p>
-                                     <p>2. Extract the content information from our content image, and try to minimize the difference between synthetic image and content image since capturing the content is one of the two crucial parts to finish this project. The complexity of capturing the information of image has relationships with different layers of content representations. The more layers we have in original image, the more difficult for us to pick up critical pixel points from the original image</p>
-                                     <p>3. Gathering the style information from style-reference image is another important part in our project. After getting the style information, we need to reconstruct the style on the synthetic image. It is very important to minimize the style difference between synthetic image and style-reference image.</p>
+                                     <p>2. Extract the content information from our content image, and try to minimize the difference between synthetic image and content image since capturing the content is one of the two crucial parts to finish this project. The complexity of capturing the information of image has relationships with different layers of content representations. The more layers we have in the original image, the more difficult for us to pick up critical pixel points from the original image</p>
+                                     <p>3. Gathering the style information from the style-reference image is another important part of our project. After getting the style information, we need to reconstruct the style on the synthetic image. It is very important to minimize the style difference between synthetic image and style-reference image.</p>
                                      <p>4. Update the information of synthesize image </p>
                                      <p>5. Build a loss function to calculate the content loss, style loss and overall loss of our model. </p>
                                      <p>6. Implement the CNN(Convolutional Neural Networks).</p>
@@ -208,7 +208,7 @@
                                     
                                    
                                      <p>1. We are currently using VGG-19 as our pre-trained model. </p>
-                                     <p>2. We finished the major research about tensorflow model and style transfers, and found a lot of relevant academic papers about them. </p>
+                                     <p>2. We finished the major research on tensorflow model and style transfers and found a lot of relevant academic papers about them. </p>
                                      <p>3. We finished implementing the ‘loss function’.</p>
                                   
                                   </div>
@@ -219,10 +219,10 @@
 
                                  <div class="post-title">
                                     <h2>Current Difficulties</h2> 
-                                    <p>1. We still need to debug our program. Currently many bugs still exist and affect the overall effectiveness of our program. Since it is our first time using vgg model and tensorflow, we need time to deal with the details.</p>
-                                     <p>2. Problems exist in setting the weight of different layers and constants, since our program is not runnable now, this is not in priority but we will finish it when our program run correctly.  We are still looking for papers about this part and will try different settings to obtain better synthetic image.</p>
-                                     <p>3. Some parts of those papers have vague definitions that we did not understand. We need time to discuss these papers and learn more. Different papers have similar approaches but quite different technique to extract information, count loss and optimize. We are currently using one of them but not sure if it is the optimal one.</p>
-                                     <p>4. We need to practice using  and train the VGG models in our projects. We tried to install the VGG19 but the installation was failed. </p>
+                                    <p>1. We still need to debug our program. Currently, many bugs still exist and affect the overall effectiveness of our program. Since it is our first time using vgg model and tensorflow, we need time to deal with the details.</p>
+                                     <p>2. Problems exist in setting the weight of different layers and constants since our program is not runnable now, this is not in priority but we will finish it when our program run correctly.  We are still looking for papers about this part and will try different settings to obtain a better synthetic image.</p>
+                                     <p>3. Some parts of those papers have vague definitions that we did not understand. We need time to discuss these papers and learn more. Different papers have similar approaches but a quite different technique to extract information, count loss and optimize. We are currently using one of them but not sure if it is the optimal one.</p>
+                                     <p>4. We need to practice using and train the VGG models in our projects. We tried to install the VGG19 but the installation was failed. </p>
                                      <div class="post-image margin-top-40 margin-bottom-40">
                                    <img src="images/blog/vgg16.png" alt="">
                                    <p>vgg16 introductions</p>
@@ -244,8 +244,8 @@
                                    
                                     
                                    
-                                     <p>1. We plan to use self trained model instead of the pre-trained model we have right now.</p>
-                                     <p>2. If we have time, we may implement a better gui instead of command line order.</p>
+                                     <p>1. We plan to use a self-trained model instead of the pre-trained model we have right now.</p>
+                                     <p>2. If we have time, we may implement a better GUI instead of command line order.</p>
                                      <p>3. The website now is currently under construction, and we expect to finish most of our project in the first 2 weeks of November. Following results of our project will also be uploaded there as the form of dev blog.</p>
                                   </div>
                                    
@@ -279,7 +279,7 @@
                                    
                                     <div class="c-padding">
                                        <h3><a href="MidtermReport.docx" target="_blank" data-toggle="tooltip" data-placement="top" title="Visit Alex Website">Download midterm report</a></h3>
-                                       <p>The original file of midterm report could be downloaded from here</p>
+                                       <p>The original file of midterm report can be downloaded from here</p>
                                       </div>
                                     </div>
                                     <!-- Post Author Bio Box End -->
